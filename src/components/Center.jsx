@@ -2,7 +2,7 @@ import React from "react";
 import eth from "../assets/eth.webp";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,
@@ -14,7 +14,7 @@ import {
 
 const Center = () => {
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -44,7 +44,7 @@ const Center = () => {
       <div className="w-full mt-10">
         <img src={eth} className="w-full" />
       </div>
-    </motion.div>
+    </div>
   );
 };
 

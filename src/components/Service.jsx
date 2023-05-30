@@ -1,7 +1,7 @@
 import React from "react";
 import image2 from "../assets/coin.png";
 import ethImg from "../assets/eth-2.jpg";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,
@@ -13,7 +13,7 @@ import {
 
 const Service = () => {
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -36,7 +36,7 @@ const Service = () => {
           Learn More
         </button>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

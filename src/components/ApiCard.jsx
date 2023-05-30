@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import {
   fadeIn,
   footerVariants,
@@ -42,7 +41,7 @@ import {
 
 const ApiCard = ({ image, name, symbol, market_cap_rank, current_price }) => {
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -63,7 +62,7 @@ const ApiCard = ({ image, name, symbol, market_cap_rank, current_price }) => {
         <h1 className="font-bold">Price:</h1>
         <h1>${current_price}</h1>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

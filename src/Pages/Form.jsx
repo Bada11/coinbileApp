@@ -63,7 +63,7 @@ const Form = () => {
   };
 
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -155,7 +155,7 @@ const Form = () => {
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

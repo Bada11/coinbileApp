@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 import { data } from "../Utils/data";
 import { NovuProvider, NotificationBell } from "@novu/notification-center";
 import { SiEthereum } from "react-icons/si";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,
@@ -100,7 +100,7 @@ const EthHome = () => {
   };
 
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -222,7 +222,7 @@ const EthHome = () => {
 
       <div className="bg-none">
         {data?.length > 0 ? (
-          <motion.div className="grid sm:grid-cols-3  sm:ml-[10%] gap-4 sm:w-[70%] xs:w-[65%] w-full sm:p-0 sm:p-5 p-10 sm:mt-5 mt-0 pb-5">
+          <div className="grid sm:grid-cols-3  sm:ml-[10%] gap-4 sm:w-[70%] xs:w-[65%] w-full sm:p-0 sm:p-5 p-10 sm:mt-5 mt-0 pb-5">
             {data.map((datax) => (
               <div
                 key={datax.token_id}
@@ -249,12 +249,12 @@ const EthHome = () => {
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
         ) : (
           "loading..."
         )}
       </div>
-    </motion.div>
+    </div>
   );
 };
 

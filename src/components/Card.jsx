@@ -2,7 +2,7 @@ import React from "react";
 import image2 from "../assets/coin.png";
 import image3 from "../assets/2.svg";
 import image4 from "../assets/plane.png";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,
@@ -14,7 +14,7 @@ import {
 
 const Card = () => {
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -67,7 +67,7 @@ const Card = () => {
           <p className="mt-5 underline cursor-pointer">View more</p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

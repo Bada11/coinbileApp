@@ -5,7 +5,7 @@ import image4 from "../assets/alien.svg";
 import image5 from "../assets/1.svg";
 import image6 from "../assets/shop_szjeit.svg";
 import image7 from "../assets/3.svg";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,
@@ -17,7 +17,7 @@ import {
 
 const Card2 = () => {
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -84,7 +84,7 @@ const Card2 = () => {
           <p className="mt-5 underline cursor-pointer">View more</p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

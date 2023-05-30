@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Input } from "../components";
 import image from "../assets/blockchain (1).png";
 import { Link, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,
@@ -23,7 +23,7 @@ const Auth = () => {
     navigate("/EthHome", { state: { name: name } });
   };
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -63,7 +63,7 @@ const Auth = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

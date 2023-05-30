@@ -3,7 +3,7 @@ import { ApiCard } from "../components";
 import { WiDirectionLeft } from "react-icons/wi";
 import { Link } from "react-router-dom";
 import { Circles } from "react-loader-spinner";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,

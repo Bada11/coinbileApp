@@ -3,7 +3,7 @@ import { SiDatastax } from "react-icons/si";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { Circles } from "react-loader-spinner";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,
@@ -59,7 +59,7 @@ const Api = () => {
   }
 
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -125,7 +125,7 @@ const Api = () => {
           </div>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 };
 

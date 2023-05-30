@@ -1,7 +1,7 @@
 import React from "react";
 import Navonet from "../assets/navonet.jpeg";
 import { AiOutlineGithub } from "react-icons/ai";
-import { motion } from "framer-motion";
+
 import {
   fadeIn,
   footerVariants,
@@ -14,7 +14,7 @@ import logo from "../assets/logo.jpg";
 
 const Footer = () => {
   return (
-    <motion.div
+    <div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
@@ -60,7 +60,7 @@ const Footer = () => {
           className="w-20 h-20 rounded sm:flex hidden flex justify-center"
         />
       </div>
-    </motion.div>
+    </div>
   );
 };
 
